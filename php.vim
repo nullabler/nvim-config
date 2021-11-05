@@ -1,14 +1,3 @@
-Plug 'StanAngeloff/php.vim'
-Plug 'stephpy/vim-php-cs-fixer'
-Plug 'adoy/vim-php-refactoring-toolbox'
-
-" PHP Autocompletion
-Plug 'ncm2/ncm2'
-"Plug 'roxma/nvim-yarp'
-Plug 'phpactor/phpactor'
-"Plug 'phpactor/ncm2-phpactor'
-
-
 " If php-cs-fixer is in $PATH, you don't need to define line below
 " let g:php_cs_fixer_path = "~/php-cs-fixer.phar" " define the path to the php-cs-fixer.phar
 
@@ -36,4 +25,7 @@ let g:php_cs_fixer_verbose = 0                    " Return the output of command
 let php_sql_query=1
 let php_htmlInStrings=1
 
-au BufWritePost *.php silent! !eval '[ -f ".git/hooks/ctags" ] && .git/hooks/ctags' &
+set makeprg=php\ -l\ %
+set errorformat=%m\ in\ %f\ on\ line\ %l
+
+autocmd FileType php map gd <C-]>

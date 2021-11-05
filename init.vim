@@ -12,7 +12,7 @@ set autoindent
 set fileformat=unix
 
 set colorcolumn=120
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
+set guifont=Monospace:h9
 "set guifont=Fura\ Code\ Light\ Nerd\ Font\ Complete:h16
 "set guifont=DroidSansMono\ Nerd\ Font\ 11
 
@@ -90,6 +90,20 @@ Plug 'rust-lang/rust.vim'
 Plug 'simrat39/rust-tools.nvim'
 Plug 'cespare/vim-toml'
 
+" PHP
+Plug 'StanAngeloff/php.vim'
+Plug 'stephpy/vim-php-cs-fixer'
+Plug 'adoy/vim-php-refactoring-toolbox'
+" PHP Autocompletion
+Plug 'ncm2/ncm2'
+"Plug 'roxma/nvim-yarp'
+Plug 'phpactor/phpactor'
+"Plug 'phpactor/ncm2-phpactor'
+
+" Js
+Plug 'yuezk/vim-js'
+Plug 'maxmellon/vim-jsx-pretty'
+
 call plug#end()
 
 lua require('_navigator')
@@ -104,5 +118,4 @@ source ~/.config/nvim/binds.vim
 source ~/.config/nvim/nerdtree.vim
 source ~/.config/nvim/golang.vim
 source ~/.config/nvim/php.vim
-source ~/.config/nvim/js.vim
 source ~/.config/nvim/sql.vim
