@@ -92,10 +92,9 @@ Plug 'cespare/vim-toml'
 
 call plug#end()
 
-lua require('navigator')
-lua require('cmp')
-lua require('lsp')
-
+lua require('_navigator')
+lua require('_cmp')
+lua require('_lsp')
 
 source ~/.config/nvim/colorscheme.vim
 source ~/.config/nvim/airline.vim
