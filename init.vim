@@ -36,6 +36,7 @@ Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'preservim/tagbar'
 
 " Snippet completion source for nvim-cmp
 Plug 'hrsh7th/cmp-vsnip'
@@ -119,3 +120,4 @@ source ~/.config/nvim/golang.vim
 source ~/.config/nvim/php.vim
 source ~/.config/nvim/sql.vim
 source ~/.config/nvim/markdown.vim
+source ~/.config/nvim/tagbar.vim
