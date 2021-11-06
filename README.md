@@ -5,6 +5,7 @@
     1. [rust_analyzer](https://rust-analyzer.github.io/manual.html#installation)
     1. [phpactor](https://phpactor.readthedocs.io/en/master/usage/standalone.html)
     1. [tsserver](https://github.com/typescript-language-server/typescript-language-server)
+1. Install CTags [instruction](http://docs.ctags.io/en/latest/autotools.html#gnu-linux-distributions)
 1. Pull config
 ```bash
 git clone git@github.com:unixoff/nvim-config.git ~/.config/nvim
