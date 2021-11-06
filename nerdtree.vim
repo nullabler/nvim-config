@@ -1,4 +1,4 @@
-let g:webdevicons_enable_nerdtree = 1
+let g:webdevicons_enable_nerdtree = 0
 let g:NERDCreateDefaultMappings = 1
 
 

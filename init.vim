@@ -12,12 +12,9 @@ set autoindent
 set fileformat=unix
 
 set colorcolumn=120
-set guifont=Monospace:h9
-"set guifont=Fura\ Code\ Light\ Nerd\ Font\ Complete:h16
-"set guifont=DroidSansMono\ Nerd\ Font\ 11
 
-"set completeopt=menu,menuone,noselect
-"set completeopt=menuone,noinsert,noselect
+set guifont=Fura\ Code\ Light\ Nerd\ Font\ Complete:h16
+
 set completeopt=noinsert,menuone,noselect
 set shortmess+=c
 
@@ -36,6 +33,7 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 "Plug 'scrooloose/syntastic'
 "Plug 'vim-scripts/taglist.vim'
@@ -101,8 +99,14 @@ Plug 'phpactor/phpactor'
 "Plug 'phpactor/ncm2-phpactor'
 
 " Js
+Plug 'pangloss/vim-javascript'
 Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
+
+" Markdown
+Plug 'elzr/vim-json'
+Plug 'plasticboy/vim-markdown'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }}
 
 call plug#end()
 
@@ -119,3 +123,4 @@ source ~/.config/nvim/nerdtree.vim
 source ~/.config/nvim/golang.vim
 source ~/.config/nvim/php.vim
 source ~/.config/nvim/sql.vim
+source ~/.config/nvim/markdown.vim
