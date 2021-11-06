@@ -36,12 +36,6 @@ Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-"Plug 'scrooloose/syntastic'
-"Plug 'vim-scripts/taglist.vim'
-"Plug 'ludovicchabant/vim-gutentags'
-"Plug 'dense-analysis/ale'
-"Plug 'Shougo/neocomplete'
-"Plug 'nvim-lua/completion-nvim'
 
 " Snippet completion source for nvim-cmp
 Plug 'hrsh7th/cmp-vsnip'
