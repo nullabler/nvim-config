@@ -4,3 +4,5 @@ autocmd VimEnter *.py,*.pl,*.js,*.php TagbarToggle
 let g:tagbar_compact = 1  
 " Отк. сортировка по имени у тагбара (мне хронология важнее) 
 let g:tagbar_sort = 0 
+
+map <F8> :TagbarToggle<cr>
