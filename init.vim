@@ -36,7 +36,7 @@ Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'preservim/tagbar'
+Plug 'majutsushi/tagbar'
 
 " Snippet completion source for nvim-cmp
 Plug 'hrsh7th/cmp-vsnip'
@@ -107,8 +107,8 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }}
 call plug#end()
 
 lua require('_navigator')
-lua require('_cmp')
-lua require('_lsp')
+"lua require('_cmp')
+"lua require('_lsp')
 
 source ~/.config/nvim/colorscheme.vim
 source ~/.config/nvim/airline.vim
