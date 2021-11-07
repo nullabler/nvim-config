@@ -2,8 +2,8 @@ nnoremap ,<space> :nohlsearch<CR>
 nnoremap <Leader>q :Bdelete<CR>
 
 " Movement
-map <M-j> yyddp
-map <M-k> yyddkP
+map <M-,> yyddp
+map <M-.> yyddkP
 map <M-h> b
 map <M-j> <S-}>
 map <M-k> <S-{>

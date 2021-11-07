@@ -119,5 +119,7 @@ source ~/.config/nvim/nerdtree.vim
 source ~/.config/nvim/golang.vim
 source ~/.config/nvim/php.vim
 source ~/.config/nvim/sql.vim
+source ~/.config/nvim/js.vim
 source ~/.config/nvim/markdown.vim
 source ~/.config/nvim/tagbar.vim
+source ~/.config/nvim/telescope.vim

@@ -10,3 +10,5 @@
 ```bash
 git clone git@github.com:unixoff/nvim-config.git ~/.config/nvim
 ```
+1. Run :PlugInstall
+1. Shortcut [link](https://gist.github.com/unixoff/85f97ea2d588027e8a9727c531ffd5b3)
