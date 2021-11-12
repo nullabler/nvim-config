@@ -24,6 +24,10 @@ set shortmess+=c
 " Left vertical line in NERDTree
 set signcolumn=yes
 
+" Save history for undo
+set undofile
+set undodir=~/.config/nvim/undodir
+
 filetype plugin indent on      " load filetype-specific indent files
 syntax on
 

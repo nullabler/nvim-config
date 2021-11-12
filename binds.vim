@@ -1,5 +1,5 @@
-nnoremap ,<space> :nohlsearch<CR>
-nnoremap <Leader>q :Bdelete<CR>
+nnoremap ,<space> :nohlsearch<cr>
+nnoremap <leader>q :Bdelete<cr>
 
 " Automatically closing braces
 inoremap {<cr> {<cr>}<esc>ko
@@ -18,13 +18,18 @@ map <M-l> w
 map <M-d> bdw
 
 " Global copy
-noremap <M-c> "+y
+noremap <M-c> "*y
 
 " Buffer
-map gbn :bn<cr>
-map gbp :bp<cr>
-map gbw :Bclose<cr>
+map bn :bn<cr>
+map bp :bp<cr>
+map bc :Bclose<cr>
 
+" Tab
+map tn :tabNext<cr>
+map tp :tabprevious<cr>
+map to :tabnew<cr>
+map tc :tabclose<cr>
 
 " Markdown
 nnoremap <M-m> :MarkdownPreview<CR>
