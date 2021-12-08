@@ -33,3 +33,10 @@ map tc :tabclose<cr>
 
 " Markdown
 nnoremap <M-m> :MarkdownPreview<CR>
+
+nnoremap <leader>t :bo sp \| resize 20 \| terminal<CR>
+nnoremap <leader>T :vsp \| terminal<CR>
+tnoremap <Esc> <C-\><C-n>
+
+" Undotree Mapping
+nnoremap <leader>u :UndotreeShow<CR>
