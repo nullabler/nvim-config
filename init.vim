@@ -10,7 +10,6 @@ set expandtab
 set smartindent
 
 set exrc
-set relativenumber
 set nu
 set nohlsearch
 set hidden
