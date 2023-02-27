@@ -18,12 +18,12 @@ map <M-l> w
 map <M-d> bdw
 
 " Global copy
-noremap <M-c> "*y
+nnoremap <M-c> "*y
 
 " Buffer
-map bn :bn<cr>
-map bp :bp<cr>
-map bc :Bclose<cr>
+map <leader>bn :bn<cr>
+map <leader>bp :bp<cr>
+map <leader>bc :Bclose<cr>
 
 " Tab
 map tn :tabNext<cr>

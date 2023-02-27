@@ -74,7 +74,7 @@ Plug 'mileszs/ack.vim'
 " color schemas
 Plug 'ray-x/aurora'
 Plug 'morhetz/gruvbox'
-Plug 'ayu-theme/ayu-vim'
+Plug 'Luxed/ayu-vim'
 Plug 'xiyaowong/nvim-transparent'
 
 " Airline
@@ -95,8 +95,7 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'tpope/vim-dotenv'
 Plug 'tpope/vim-commentary'
 
-" lsp
-"Plug 'neovim/nvim-lspconfig' " Duble
+" Navigator
 Plug 'ray-x/guihua.lua', {'do': 'cd lua/fzy && make' }
 Plug 'ray-x/navigator.lua'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -141,20 +140,21 @@ Plug 'heavenshell/vim-jsdoc', {
 \}
 
 " Markdown
-Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
+"Plug 'godlygeek/tabular'
+"Plug 'plasticboy/vim-markdown'
 " Requires yarn, if yarn wasn't present on :PlugInstall
 " run :call mkdp#until#install()
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+"Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
 " Floaterm
 Plug 'voldikss/vim-floaterm'
 
 call plug#end()
 
-lua require('_navigator')
 lua require('_cmp')
 lua require('_lsp')
+lua require('_navigator')
+lua require('_treesitter')
 
 source ~/.config/nvim/autocomplete.vim
 source ~/.config/nvim/colorscheme.vim
@@ -167,7 +167,7 @@ source ~/.config/nvim/golang.vim
 source ~/.config/nvim/php.vim
 source ~/.config/nvim/sql.vim
 source ~/.config/nvim/js.vim
-source ~/.config/nvim/markdown.vim
+"source ~/.config/nvim/markdown.vim
 source ~/.config/nvim/tagbar.vim
 source ~/.config/nvim/telescope.vim
 source ~/.config/nvim/floatterm.vim
