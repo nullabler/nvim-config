@@ -25,25 +25,10 @@ set splitright
 filetype plugin on
 filetype indent on
 
-
-"set autoindent
-"set fileformat=unix
-"set colorcolumn=120
-"set guifont=Fura\ Code\ Light\ Nerd\ Font\ Complete:h16
-"set completeopt=noinsert,menuone,noselect
-"set completeopt=menu,menuone,noselect
-"set shortmess+=c
-" Left vertical line in NERDTree
-"set signcolumn=yes
-
 " Save history for undo
 set undofile
 set undodir=~/.config/nvim/undodir
 
-"filetype plugin indent on      " load filetype-specific indent files
-"syntax on
-
-" inoremap jk <esc>
 
 call plug#begin('~/.vim/plugged')
 
@@ -103,8 +88,6 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " For NERDTree
 Plug 'preservim/nerdtree'
 Plug 'preservim/nerdcommenter'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " Close buffer
 Plug 'moll/vim-bbye'
@@ -139,13 +122,6 @@ Plug 'heavenshell/vim-jsdoc', {
   \ 'do': 'make install'
 \}
 
-" Markdown
-"Plug 'godlygeek/tabular'
-"Plug 'plasticboy/vim-markdown'
-" Requires yarn, if yarn wasn't present on :PlugInstall
-" run :call mkdp#until#install()
-"Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
-
 " Floaterm
 Plug 'voldikss/vim-floaterm'
 
@@ -167,7 +143,6 @@ source ~/.config/nvim/golang.vim
 source ~/.config/nvim/php.vim
 source ~/.config/nvim/sql.vim
 source ~/.config/nvim/js.vim
-"source ~/.config/nvim/markdown.vim
 source ~/.config/nvim/tagbar.vim
 source ~/.config/nvim/telescope.vim
 source ~/.config/nvim/floatterm.vim
