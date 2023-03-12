@@ -56,7 +56,7 @@ require'navigator'.setup({
                               -- disable: a blacklist of language that will not be formatted on save
                            -- function: function(bufnr) return true end to enable/disable lsp format on save
     format_options = {async=false}, -- async: disable by default, the option used in vim.lsp.buf.format({async={true|false}, name = 'xxx'})
-    disable_format_cap = {"sqls", "lua_ls", "gopls"},  -- a list of lsp disable format capacity (e.g. if you using efm or vim-codeformat etc), empty {} by default
+    disable_format_cap = {},  -- a list of lsp disable format capacity (e.g. if you using efm or vim-codeformat etc), empty {} by default
                                                             -- If you using null-ls and want null-ls format your code
                                                             -- you should disable all other lsp and allow only null-ls.
     -- disable_lsp = {'pylsd', 'sqlls'},  -- prevents navigator from setting up this list of servers. 
